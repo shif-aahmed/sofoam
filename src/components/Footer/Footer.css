@@ -1,0 +1,157 @@
+.footer {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #000;
+}
+
+/* Footer Top */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.footer-logo-highlight {
+  color: #d4a74d;
+}
+
+.footer-left p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.footer-center {
+  flex: 1.5;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #d4a74d;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-right h4 {
+  margin-bottom: 0.8rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: #000;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-icons a:hover {
+  background: #d4a74d;
+  color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid #e5e5e5;
+  background-color: #ebebeb;
+  padding: 1rem 3rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-policies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.footer-policies a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.footer-policies span {
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+}

@@ -1,0 +1,44 @@
+.support-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.support-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.support-icon {
+  width: 80px; /* Adjust to match exact icon size */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.support-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.support-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
