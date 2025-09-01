@@ -3,7 +3,7 @@ import './LimitedTimeOffers.css';
 
 // Import your existing datasets
 import accessoriesData from '../../pages/AccessoriesPage/AccessoriesData';
-import pillowsData from '../../pages/PillowsPage/pillowsData';
+import pillowsData from '../../pages/PillowsPage/PillowsData';
 import orthoData from '../../pages/OrthoPage/ortho';
 
 const LimitedTimeOffers = () => {

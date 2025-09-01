@@ -4,7 +4,7 @@ import { FaHeart, FaEye, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 // Import your existing data files
 import accessoriesData from '../../pages/AccessoriesPage/AccessoriesData';
-import pillowsData from '../../pages/PillowsPage/pillowsData';
+import pillowsData from '../../pages/PillowsPage/PillowsData';
 import orthoData from '../../pages/OrthoPage/ortho';
 
 const Arrival = () => {
