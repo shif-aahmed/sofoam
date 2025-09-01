@@ -81,12 +81,11 @@
 .offers-right {
   flex: 1;
   min-width: 300px;
-  max-height: 513px;
-  overflow-y: auto;
+  height: 450px; /* same as brown box */
+  overflow-y: auto; /* vertical scroll for larger screens */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  /* padding-right: 1rem; */
   border-radius: 40px;
   box-sizing: border-box;
   scrollbar-width: none;
@@ -169,13 +168,13 @@
 /* Slider + brown div above behavior for ≤992px */
 @media (max-width: 992px) {
   .limited-offers-container {
-    padding: 1rem 2rem; /* reduced right padding */
+    padding: 1rem 2rem;
   }
 
   .offers-content {
     flex-direction: column;
     gap: 1.5rem;
-    align-items: stretch; /* restore original behavior */
+    align-items: stretch;
   }
 
   .offers-left {
@@ -192,15 +191,15 @@
     font-size: 0.95rem;
   }
 
-  /* Match arrival slider behavior */
+  /* Product grid as horizontal slider */
   .offers-right {
     display: flex;
     gap: 1rem;
-    overflow-x: auto;
+    overflow-x: auto;       /* manual horizontal scroll */
     overflow-y: hidden;
     scroll-behavior: smooth;
-    max-height: auto;
-    padding: 0 1rem;
+    height: 200px;           /* slider height for small screens */
+    padding: 0 1rem;        /* left & right padding */
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
@@ -210,9 +209,9 @@
   }
 
   .offer-card {
-    width: 200px;
-    height: 200px;
-    flex: 0 0 auto;
+    width: 200px;           /* fixed width */
+    flex: 0 0 auto;         /* prevent shrinking */
+    height: 100%;           /* fill slider height */
   }
 }
 
@@ -230,12 +229,26 @@
     padding: 0.6rem 1rem;
   }
 
+  /* Horizontal slider for very small screens */
   .offers-right {
-    min-width: 100%;
-    padding: 0 0.5rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;       /* manual scroll */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    height: 200px;           /* fixed slider height */
+    padding: 0 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .offers-right::-webkit-scrollbar {
+    display: none;
   }
 
   .offer-card {
-    width: 100px;
+    width: 200px;           /* fixed width, no shrink */
+    flex: 0 0 auto;
+    height: 100%;           /* match slider height */
   }
 }
