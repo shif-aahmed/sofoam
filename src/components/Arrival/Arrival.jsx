@@ -1,25 +1,28 @@
 import React, { useRef } from 'react';
 import './Arrival.css';
 import { FaHeart, FaEye, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import product1 from '../../assets/product1.webp';
-import product2 from '../../assets/product2.webp';
-import product3 from '../../assets/product3.webp';
+
+// Import your existing data files
+import accessoriesData from '../../pages/AccessoriesPage/AccessoriesData';
+import pillowsData from '../../pages/PillowsPage/pillowsData';
+import orthoData from '../../pages/OrthoPage/ortho';
 
 const Arrival = () => {
   const sliderRef = useRef(null);
 
-  const products = [
-    { id: 1, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$45', img: product1 },
-    { id: 2, name: 'SOFOAM Majestic Black Horse & Foal', price: '$30', img: product2 },
-    { id: 3, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$60', img: product3 },
-    { id: 4, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$25', img: product1 },
-    { id: 5, name: 'SOFOAM Majestic Black Horse & Foal', price: '$15', img: product2 },
-    { id: 6, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$45', img: product3 },
-    { id: 7, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$30', img: product1 },
-    { id: 8, name: 'SOFOAM Majestic Black Horse & Foal', price: '$60', img: product2 },
-    { id: 9, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$25', img: product3 },
-    { id: 10, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$15', img: product1 },
-  ];
+  // Helper: Get random items from an array
+  const getRandomItems = (arr, count) => {
+    return [...arr].sort(() => 0.5 - Math.random()).slice(0, count);
+  };
+
+  // Fetch random items from each dataset
+  const randomAccessories = getRandomItems(accessoriesData, 4);
+  const randomPillows = getRandomItems(pillowsData, 3);
+  const randomOrtho = getRandomItems(orthoData, 3);
+
+  // Merge and shuffle them together
+  const products = [...randomAccessories, ...randomPillows, ...randomOrtho]
+    .sort(() => 0.5 - Math.random());
 
   const scrollLeft = () => {
     const cardWidth = sliderRef.current.querySelector('.arrival-card').offsetWidth + 16; // 16px gap
@@ -33,15 +36,14 @@ const Arrival = () => {
 
   return (
     <section className="arrival-container">
-      {/* Texts */}
-      <div className="arrival-texts">
-        <p className="explore-text">Explore SOFOAM’s Latest Creations</p>
-        <h2 className="arrival-heading">New Arrivals</h2>
-        <p className="arrival-subtext">
-          Elevate your living space with SOFOAM’s exquisite range of premium home décor accents.
-        </p>
-        <button className="shop-btn">Shop SOFOAM New Arrivals</button>
-      </div>
+<div className="arrival-texts">
+  <p className="explore-text">Discover SOFOAM’s Sleep Innovations</p>
+  <h2 className="arrival-heading">New Arrivals</h2>
+  <p className="arrival-subtext">
+    Experience ultimate comfort with SOFOAM’s premium mattresses, pillows, and bedding essentials—designed for perfect sleep and lasting support.
+  </p>
+  <button className="shop-btn">SOFOAM New Arrivals</button>
+</div>
 
       {/* Slider */}
       <div className="arrival-slider" ref={sliderRef}>

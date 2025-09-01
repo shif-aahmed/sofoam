@@ -1,19 +1,23 @@
 import React from 'react';
 import './LimitedTimeOffers.css';
-import product1 from '../../assets/product1.webp';
-import product2 from '../../assets/product2.webp';
-import product3 from '../../assets/product3.webp';
+
+// Import your existing datasets
+import accessoriesData from '../../pages/AccessoriesPage/AccessoriesData';
+import pillowsData from '../../pages/PillowsPage/pillowsData';
+import orthoData from '../../pages/OrthoPage/ortho';
 
 const LimitedTimeOffers = () => {
-  const offerProducts = [
-    { id: 1, name: 'SOFOAM Luxe Comfort Pillow', price: '$45', img: product1 },
-    { id: 2, name: 'SOFOAM Orthopedic Mattress', price: '$30', img: product2 },
-    { id: 3, name: 'SOFOAM Premium Neck Rest', price: '$60', img: product3 },
-    { id: 4, name: 'SOFOAM Luxe Comfort Pillow', price: '$25', img: product1 },
-    { id: 5, name: 'SOFOAM Orthopedic Mattress', price: '$15', img: product2 },
-    { id: 6, name: 'SOFOAM Premium Neck Rest', price: '$45', img: product3 },
-    
+  // Combine all products into one array
+  const allProducts = [
+    ...accessoriesData,
+    ...pillowsData,
+    ...orthoData,
   ];
+
+  // Shuffle and select random items (6 in this case)
+  const offerProducts = [...allProducts]
+    .sort(() => Math.random() - 0.5) // Randomize order
+    .slice(0, 6); // Pick 6 random products
 
   return (
     <section className="limited-offers-container">

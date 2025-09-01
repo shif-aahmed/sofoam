@@ -3,6 +3,8 @@
   font-family: Arial, sans-serif;
   position: relative;
   overflow: hidden;
+      background-color: #f8f6f3;
+
 }
 
 /* Top Section */
@@ -10,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 30px 40px;
   border-bottom: 1px solid #ddd;
 }

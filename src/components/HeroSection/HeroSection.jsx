@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import heroImg from '../../assets/hero-section.webp';
+import heroImg from '../../assets/hero-section.png';
 import card1 from '../../assets/card1.svg';
 import card2 from '../../assets/card2.svg';
 import card3 from '../../assets/card3.svg';
