@@ -198,7 +198,7 @@
 
   /* Product grid as horizontal slider */
   .offers-right {
-    display: flex !important;
+    display: none !important;
     flex-wrap: nowrap !important;      /* crucial for horizontal scroll */
     gap: 1rem;
     overflow-x: auto !important;       /* horizontal scroll */
@@ -246,7 +246,7 @@
 
   /* Horizontal slider for very small screens */
   .offers-right {
-    display: flex !important;
+    display: none !important;
     flex-wrap: nowrap !important;       /* crucial for horizontal scroll */
     gap: 1rem;
     overflow-x: auto !important;       /* horizontal scroll works */
