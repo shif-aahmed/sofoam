@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./PillowsPage.css";
 import { FaHeart, FaEye } from "react-icons/fa";
-import pillowsData from "./pillowsData";
+import pillowsData from "./PillowsData.js";
 
 const PillowsPage = () => {
   const [selectedPillow, setSelectedPillow] = useState(null);
