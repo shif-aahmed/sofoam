@@ -12,10 +12,10 @@ const NavBar = () => {
     { name: "All", path: "/" },
     { name: "Pillows", path: "/pillows" },
     { name: "Accessories", path: "/accessories"},
-    { name: "SoFoam Ortho", path: "/ortho" },
-    { name: "Wall Decor", path: "/wall-decor" },
-    { name: "Lighting", path: "/lighting" },
-    { name: "Kitchenware", path: "/kitchenware" }
+    { name: "SoFoam Ortho", path: "/ortho" }
+    // { name: "Wall Decor", path: "/wall-decor" },
+    // { name: "Lighting", path: "/lighting" },
+    // { name: "Kitchenware", path: "/kitchenware" }
   ];
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);

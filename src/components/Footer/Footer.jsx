@@ -12,10 +12,9 @@ const Footer = () => {
           <h1 className="footer-logo">
           <img src={logo} alt="Logo" />
           </h1>
-          <p>Cavalry Ground, Lahore, Pakistan 54660</p>
-          <p>care@alfadecor.pk</p>
-          <p>+92 331 6227699</p>
-        </div>
+          {/* <p>Cavalry Ground, Lahore, Pakistan 54660</p> */}
+          <p>SoFoam</p>
+<p><a href="tel:03226314337">0322-6314337</a></p>        </div>
 
         {/* Center Section */}
         <div className="footer-center">
@@ -40,7 +39,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        <p>© ALFA DECOR 2020</p>
+        <p>© SOFOAM</p>
         <div className="footer-policies">
           <a href="#">Privacy Policy</a>
           <span>|</span>

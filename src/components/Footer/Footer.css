@@ -33,8 +33,13 @@
 .footer-left p {
   margin: 0.3rem 0;
   color: #333;
+  font-weight: 600;
 }
-
+.footer-left p a{
+  text-decoration: none;
+  color: #525252;
+  font-weight: 500;
+}
 .footer-center {
   flex: 1.5;
   min-width: 250px;
