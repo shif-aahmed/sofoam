@@ -1,25 +1,32 @@
 import React, { useRef } from 'react';
 import './BestSeller.css';
 import { FaHeart, FaEye, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import product1 from '../../assets/product1.webp';
-import product2 from '../../assets/product2.webp';
-import product3 from '../../assets/product3.webp';
+import bestsellers1 from './../../assets/bestsellers/bs1.webp';
+import bestsellers2 from './../../assets/bestsellers/bs2.webp';
+import bestsellers3 from './../../assets/bestsellers/bs3.webp';
+import bestsellers4 from './../../assets/bestsellers/bs4.webp';
+import bestsellers5 from './../../assets/bestsellers/bs5.webp';
+import bestsellers6 from './../../assets/bestsellers/bs6.webp';
+import bestsellers7 from './../../assets/bestsellers/bs7.webp';
+import bestsellers8 from './../../assets/bestsellers/bs8.webp';
+import bestsellers9 from './../../assets/bestsellers/bs9.webp';
+import bestsellers10 from './../../assets/bestsellers/bs10.webp';
 
 const BestSeller = () => {
   const sliderRef = useRef(null);
 
-  const products = [
-    { id: 1, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$45', img: product1 },
-    { id: 2, name: 'Sleek Black Horse and Foal Sculpture', price: '$30', img: product2 },
-    { id: 3, name: 'Creative Fawn Ash Holder', price: '$60', img: product3 },
-    { id: 4, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$25', img: product1 },
-    { id: 5, name: 'Sleek Black Horse and Foal Sculpture', price: '$15', img: product2 },
-    { id: 6, name: 'Creative Fawn Ash Holder', price: '$45', img: product3 },
-    { id: 7, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$30', img: product1 },
-    { id: 8, name: 'Sleek Black Horse and Foal Sculpture', price: '$60', img: product2 },
-    { id: 9, name: 'Creative Fawn Ash Holder', price: '$25', img: product3 },
-    { id: 10, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$15', img: product1 },
-  ];
+const products = [
+  { id: 1, name: 'SoFoam Coccyx Cushion', price: 'Rs.4,320', img: bestsellers1 },
+  { id: 2, name: 'SoFoam Ortho Back Care Cushion', price: 'Rs.3,870', img: bestsellers2 },
+  { id: 3, name: 'SoFoam Gold Pillow', price: 'Rs.1,800', img: bestsellers3 },
+  { id: 4, name: 'SoFoam Contour Pillow', price: 'Rs.4,230', img: bestsellers4 },
+  { id: 5, name: 'SoFoam Lumbar Support Cushion', price: 'Rs.7,155', img: bestsellers5 },
+  { id: 6, name: 'SoFoam Ultra Waterproof Protector', price: 'Rs.7,100', img: bestsellers6 },
+  { id: 7, name: 'SoFoam Ring Cushion', price: 'Rs.4,320', img: bestsellers7 },
+  { id: 8, name: 'SoFoam Ortho Knee Pillow', price: 'Rs.1,935', img: bestsellers8 },
+  { id: 9, name: 'SoFoam Deluxe Jai Namaz', price: 'Rs.5,000', img: bestsellers9 },
+  { id: 10, name: 'SoFoam Baby Nursing Pillow', price: 'Rs.4,500', img: bestsellers10 },
+];;
 
   const scrollLeft = () => {
     const cardWidth = sliderRef.current.querySelector('.arrival-card').offsetWidth + 16; // 16px gap
@@ -34,14 +41,15 @@ const BestSeller = () => {
   return (
     <section className="arrival-container">
       {/* Texts */}
-      <div className="arrival-texts">
-        <p className="explore-text">Most Loved Home Decor Picks</p>
-        <h2 className="arrival-heading">Best Sellers</h2>
-        <p className="arrival-subtext">
-            Elevate your space effortlessly with the mostcoveted pieces, celebrated for their style and functionality at ALFA DECOR
-        </p>
-        <button className="shop-btn">Shop Best Sellers</button>
-      </div>
+<div className="arrival-texts">
+  <p className="explore-text">Experience SOFOAM’s Comfort Essentials</p>
+  <h2 className="arrival-heading">Best Sellers</h2>
+  <p className="arrival-subtext">
+    Upgrade your sleep and relaxation with SOFOAM’s most-loved pillows, mattresses, and bedding—crafted for lasting comfort and support.
+  </p>
+  <button className="shop-btn">SOFOAM Best Sellers</button>
+</div>
+
 
       {/* Slider */}
       <div className="arrival-slider" ref={sliderRef}>

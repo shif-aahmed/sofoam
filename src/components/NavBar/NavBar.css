@@ -11,12 +11,12 @@
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 40px;
   border-bottom: 1px solid #ddd;
 }
 
 .navbar-logo img {
-  height: 50px;
+  height: 70px;
 }
 
 .navbar-space {

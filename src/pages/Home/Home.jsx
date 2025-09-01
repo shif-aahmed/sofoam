@@ -11,13 +11,11 @@ import Support from '../../components/Support/Support'
 const Home = () => {
   return (
     <div>
-      <NavBar/>
       <HeroSection/>
       <Arrival/>
       <LimitedTimeOffers/>
       <BestSeller/>
       <Support/>
-      <Footer/>
     </div>
   )
 }

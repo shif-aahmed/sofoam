@@ -6,29 +6,30 @@ import product3 from '../../assets/product3.webp';
 
 const LimitedTimeOffers = () => {
   const offerProducts = [
-    { id: 1, name: 'Obsidian Embrace', price: '$45', img: product1 },
-    { id: 2, name: 'Sleek Black Horse', price: '$30', img: product2 },
-    { id: 3, name: 'Creative Fawn Ash Holder', price: '$60', img: product3 },
-    { id: 4, name: 'Obsidian Embrace', price: '$25', img: product1 },
-    { id: 5, name: 'Sleek Black Horse', price: '$15', img: product2 },
-    { id: 6, name: 'Creative Fawn Ash Holder', price: '$45', img: product3 },
+    { id: 1, name: 'SOFOAM Luxe Comfort Pillow', price: '$45', img: product1 },
+    { id: 2, name: 'SOFOAM Orthopedic Mattress', price: '$30', img: product2 },
+    { id: 3, name: 'SOFOAM Premium Neck Rest', price: '$60', img: product3 },
+    { id: 4, name: 'SOFOAM Luxe Comfort Pillow', price: '$25', img: product1 },
+    { id: 5, name: 'SOFOAM Orthopedic Mattress', price: '$15', img: product2 },
+    { id: 6, name: 'SOFOAM Premium Neck Rest', price: '$45', img: product3 },
+    
   ];
 
   return (
     <section className="limited-offers-container">
       {/* Top texts */}
-      <p className="offers-alert">Don't miss out — These deals won't last!</p>
+      <p className="offers-alert">Exclusive SOFOAM Sleep Deals — Limited Time Only!</p>
       <h2 className="offers-heading">Limited Time Offers</h2>
-      <p className="offers-subtext">Explore exclusive decor picks at special prices</p>
+      <p className="offers-subtext">Premium mattresses and pillows at irresistible prices</p>
 
       <div className="offers-content">
         {/* Left side: dark brown info panel */}
         <div className="offers-left">
-          <h3 className="offers-left-heading">Handpicked, Time Limited, Designed to elevate</h3>
+          <h3 className="offers-left-heading">Handpicked SOFOAM Comfort</h3>
           <p className="offers-left-subtext">
-             your space — grab your favorites before they are gone!
+            Upgrade your sleep experience — grab your favorites before they're gone!
           </p>
-          <button className="offers-left-btn">Click to Shop</button>
+          <button className="offers-left-btn">Shop</button>
         </div>
 
         {/* Right side: scrollable product grid */}

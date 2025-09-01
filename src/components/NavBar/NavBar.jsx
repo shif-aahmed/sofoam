@@ -2,14 +2,20 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaUserCircle, FaHeart, FaShoppingCart, FaSearch, FaBars, FaTimes, FaChevronRight } from 'react-icons/fa';
 import './NavBar.css';
-// import logo from '../../assets/logo.png';
+import logo from '../../assets/logo2.png';
 
 const NavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  // Define routes for each menu item
   const menuItems = [
-    "All", "Premiums", "Furniture", "Home Decor", 
-    "Wall Decor", "Lighting", "Kitchenware"
+    { name: "All", path: "/" },
+    { name: "Pillows", path: "/pillows" },
+    { name: "Accessories", path: "/accessories"},
+    { name: "SoFoam Ortho", path: "/ortho" },
+    { name: "Wall Decor", path: "/wall-decor" },
+    { name: "Lighting", path: "/lighting" },
+    { name: "Kitchenware", path: "/kitchenware" }
   ];
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
@@ -18,18 +24,15 @@ const NavBar = () => {
     <div className="navbar-container">
       {/* Top Section */}
       <div className="navbar-top">
-        <div className="navbar-logo" >
-          LOGO
-          {/* <img src={logo} alt="Logo" /> */}
+        <div className="navbar-logo">
+          <img src={logo} alt="Logo" />
         </div>
 
         <div className="navbar-space"></div>
 
         <div className="navbar-right">
-          {/* Hamburger menu for mobile */}
           <FaBars className="hamburger-icon" onClick={toggleSidebar} />
           
-          {/* Desktop icons */}
           <div className="navbar-search-desktop">
             <input type="text" placeholder="Search..." />
             <FaSearch className="search-icon" />
@@ -40,16 +43,16 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Bottom Section - hidden on mobile */}
+      {/* Bottom Section - Desktop Navigation */}
       <div className="navbar-bottom">
         {menuItems.map((item, idx) => (
-          <Link key={idx} to={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="navbar-button">
-            {item}
+          <Link key={idx} to={item.path} className="navbar-button">
+            {item.name}
           </Link>
         ))}
       </div>
 
-      {/* Sidebar for mobile */}
+      {/* Sidebar for Mobile */}
       <div className={`mobile-sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <FaTimes className="close-sidebar" onClick={toggleSidebar} />
@@ -65,8 +68,13 @@ const NavBar = () => {
             <FaShoppingCart className="sidebar-icon" />
           </div>
           {menuItems.map((item, idx) => (
-            <Link key={idx} to={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="sidebar-link" onClick={toggleSidebar}>
-              <span>{item}</span>
+            <Link 
+              key={idx} 
+              to={item.path} 
+              className="sidebar-link" 
+              onClick={toggleSidebar}
+            >
+              <span>{item.name}</span>
               <FaChevronRight className="sidebar-arrow" />
             </Link>
           ))}

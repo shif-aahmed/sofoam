@@ -25,10 +25,10 @@
   margin: 0 0 1rem 0;
   font-weight: 600;
 }
-
-.footer-logo-highlight {
-  color: #d4a74d;
+.footer-logo img{
+  height: 70px;
 }
+
 
 .footer-left p {
   margin: 0.3rem 0;

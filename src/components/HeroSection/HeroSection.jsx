@@ -5,11 +5,12 @@ import card1 from '../../assets/card1.svg';
 import card2 from '../../assets/card2.svg';
 import card3 from '../../assets/card3.svg';
 import "./HeroSection.css";
+
 const HeroSection = () => {
   const cards = [
-    { title: 'Festive Lights', image: card1 },
-    { title: 'Fox Plants', image: card2 },
-    { title: 'Candle Stands', image: card3 }
+    { title: 'Luxury Cushions', image: card1 },
+    { title: 'Designer Throws', image: card2 },
+    { title: 'Elegant Decor Accents', image: card3 }
   ];
 
   return (
@@ -20,19 +21,16 @@ const HeroSection = () => {
       </div>
 
       {/* Scrolling text */}
-<div className="hero-scroller">
-  <div 
-    className="scrolling-text" 
-  >
-    <span>#NewBeginnings</span>
-    <span>By Any Product</span>
-    <span>Transform Your Space With Ease</span>
-    <span>#NewBeginnings</span>
-    <span>By Any Product</span>
-    <span>Transform Your Space With Ease</span>
-  </div>
-</div>
-
+      <div className="hero-scroller">
+        <div className="scrolling-text">
+          <span>#SOFOAMStyle</span>
+          <span>Shop Premium Comfort</span>
+          <span>Redefine Your Living Space</span>
+          <span>#SOFOAMStyle</span>
+          <span>Shop Premium Comfort</span>
+          <span>Redefine Your Living Space</span>
+        </div>
+      </div>
 
       {/* Red cards section */}
       <div className="hero-cards">

@@ -9,16 +9,16 @@ const Arrival = () => {
   const sliderRef = useRef(null);
 
   const products = [
-    { id: 1, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$45', img: product1 },
-    { id: 2, name: 'Sleek Black Horse and Foal Sculpture', price: '$30', img: product2 },
-    { id: 3, name: 'Creative Fawn Ash Holder', price: '$60', img: product3 },
-    { id: 4, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$25', img: product1 },
-    { id: 5, name: 'Sleek Black Horse and Foal Sculpture', price: '$15', img: product2 },
-    { id: 6, name: 'Creative Fawn Ash Holder', price: '$45', img: product3 },
-    { id: 7, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$30', img: product1 },
-    { id: 8, name: 'Sleek Black Horse and Foal Sculpture', price: '$60', img: product2 },
-    { id: 9, name: 'Creative Fawn Ash Holder', price: '$25', img: product3 },
-    { id: 10, name: 'Obsidian Embrace: The Swans of Golden Light', price: '$15', img: product1 },
+    { id: 1, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$45', img: product1 },
+    { id: 2, name: 'SOFOAM Majestic Black Horse & Foal', price: '$30', img: product2 },
+    { id: 3, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$60', img: product3 },
+    { id: 4, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$25', img: product1 },
+    { id: 5, name: 'SOFOAM Majestic Black Horse & Foal', price: '$15', img: product2 },
+    { id: 6, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$45', img: product3 },
+    { id: 7, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$30', img: product1 },
+    { id: 8, name: 'SOFOAM Majestic Black Horse & Foal', price: '$60', img: product2 },
+    { id: 9, name: 'SOFOAM Artisan Fawn Ash Holder', price: '$25', img: product3 },
+    { id: 10, name: 'SOFOAM Signature Swans – Golden Serenity', price: '$15', img: product1 },
   ];
 
   const scrollLeft = () => {
@@ -35,12 +35,12 @@ const Arrival = () => {
     <section className="arrival-container">
       {/* Texts */}
       <div className="arrival-texts">
-        <p className="explore-text">Explore our latest collection</p>
+        <p className="explore-text">Explore SOFOAM’s Latest Creations</p>
         <h2 className="arrival-heading">New Arrivals</h2>
         <p className="arrival-subtext">
-          Discover the latest additions to our vast range of Home Decor products
+          Elevate your living space with SOFOAM’s exquisite range of premium home décor accents.
         </p>
-        <button className="shop-btn">Shop New Arrivals</button>
+        <button className="shop-btn">Shop SOFOAM New Arrivals</button>
       </div>
 
       {/* Slider */}

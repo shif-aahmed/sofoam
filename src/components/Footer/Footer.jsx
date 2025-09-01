@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
+import logo from '../../assets/logo2.png';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="footer-left">
           <h1 className="footer-logo">
-            <span className="footer-logo-highlight">logo</span>
+          <img src={logo} alt="Logo" />
           </h1>
           <p>Cavalry Ground, Lahore, Pakistan 54660</p>
           <p>care@alfadecor.pk</p>
