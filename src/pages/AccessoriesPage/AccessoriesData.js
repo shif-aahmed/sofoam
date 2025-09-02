@@ -60,21 +60,21 @@ const accessoriesData = [
   {
     id: 3,
     name: "MoltyOrtho Back Care Cushion",
-    price: "Rs.4,300Rs.3,870",
+    price: "Rs.3,870",
     img: accessories3,
     description: "The MoltyOrtho Back Care Cushion prevents backache while one is driving or is at work."
   },
   {
     id: 4,
     name: "Celeste Jai Namaz",
-    price: "priceRs.7,500",
+    price: "Rs.7,500",
     img: accessories4,
     description: "The Celeste Memory Jai Namaz is thoughtfully designed to enhance your prayer experience with comfort and support. Made with high-resilience memory foam, it cushions pressure points especially the knees and ankles during sujood and tashahhud, reducing fatigue and strain.-Memory Foam-Velvet Luxe Surface-Anti-Skid Stability-Compact and Elegant Portability"
   },
   {
     id: 5,
     name: "MoltyFoam Jai Namaz",
-    price: "Rs.4,050Rs.4,000",
+    price: "Rs.4,000",
     img: accessories5,
     description: "Plush Velvet Jai Namaz quilted with high density rebounded foam and matching fabric underlining provide ease of offering prayer and protects knees of the elderly."
   },
@@ -88,7 +88,7 @@ const accessoriesData = [
   {
     id: 7,
     name: "Coccyx Cushion",
-    price: "Rs.4,800Rs.4,320",
+    price: "Rs.4,320",
     img: accessories7,
     description: "The unique cut out design is what sets our Molty Foam Coccyx Care Cushion apart. It suspends the coccyx and eliminates all the pressure from the back while sitting or driving, (especially on sensitive areas like tail bone)."
   },
@@ -102,35 +102,35 @@ const accessoriesData = [
   {
     id: 9,
     name: "Lumbar Support Cushion",
-    price: "Rs.7,950Rs.7,155",
+    price: "Rs.7,155",
     img: accessories9,
     description: "The perfect ergonomic structure of MoltyOrtho Lumbar support is designed to provide relief from upper, mid, and low back pain due to driving, long working hours, and some injury. Besides providing extreme contour cushioning, the high-end memory foam also absorbs jerks and shocks while driving to prevent muscle spasms and backaches. The ideal size of the cushion makes it a great portable solution for work and travelling."
   },
   {
     id: 10,
     name: "MoltyOrtho Knee Pillow",
-    price: "Rs.2,150Rs.1,935",
+    price: "Rs.1,935",
     img: accessories10,
     description: "MoltyOrtho by moltyfoam is the full range of Medically approved sleeping accessories.MoltyOrtho  Knee Pillow for sleeping provides maximum support and pressure relief on the lower back, spine and hip pain. The pillow is designed to alleviate joint pains and the rubbing of the knees. It also helps reduce back pain and provides adequate alignment to reduce Sciatica."
   },
   {
     id: 11,
     name: "Ring Cushion",
-    price: "Rs.4,800Rs.4,320",
+    price: "Rs.4,320",
     img: accessories11,
     description: "Designed ideally for patients with piles, the ring cushion distributes body weight evenly without putting pressure on the lower abdomen. It provides effective pain relief and healing of the affected area. The cover is hypoallergenic and machine washable to maintain hygiene at all times."
   },
   {
     id: 12,
     name: "MoltyOrtho Topper",
-    price: "Rs.7,500Rs.6,750",
+    price: "Rs.6,750",
     img: accessories12,
     description: "MoltyOrtho Topper is a quick and affordable solution to your uncomfortable mattress problems. The convoluted zones help alleviate painful pressure points by distributing body weight and provide a firm sleeping surface to your existing mattress that helps reduce pain and align the spine."
   },
   {
     id: 13,
     name: "MoltyOrtho HeadRest Cushion",
-    price: "Rs.4,800Rs.4,320",
+    price: "Rs.4,320",
     img: accessories13,
     description: "MoltyOrtho Headrest provides additional support for your neck, cervical and head and helps improve posture while traveling, reducing muscle tension and stress. Made from high-quality memory foam, it molds to your neck and head perfectly to give you just the right amount of cushion for extra comfort."
   },
@@ -158,7 +158,7 @@ const accessoriesData = [
   {
     id: 17,
     name: "Cervical Collar",
-    price: "Rs.4,700Rs.4,230",
+    price: "Rs.4,230",
     img: accessories17,
     description: "MoltyFoam Cervical Collar fits the neck comfortably and helps release pain and accelerate tissue recovery by keeping them warm. It is multi-purpose, can be used during flight, computer work, reading, watching TV and stabilize neck while sleeping."
   },

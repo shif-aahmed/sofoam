@@ -15,18 +15,25 @@ import bestsellers10 from './../../assets/bestsellers/bs10.webp';
 const BestSeller = () => {
   const sliderRef = useRef(null);
 
-const products = [
-  { id: 1, name: 'SoFoam Coccyx Cushion', price: 'Rs.4,320', img: bestsellers1 },
-  { id: 2, name: 'SoFoam Ortho Back Care Cushion', price: 'Rs.3,870', img: bestsellers2 },
-  { id: 3, name: 'SoFoam Gold Pillow', price: 'Rs.1,800', img: bestsellers3 },
-  { id: 4, name: 'SoFoam Contour Pillow', price: 'Rs.4,230', img: bestsellers4 },
-  { id: 5, name: 'SoFoam Lumbar Support Cushion', price: 'Rs.7,155', img: bestsellers5 },
-  { id: 6, name: 'SoFoam Ultra Waterproof Protector', price: 'Rs.7,100', img: bestsellers6 },
-  { id: 7, name: 'SoFoam Ring Cushion', price: 'Rs.4,320', img: bestsellers7 },
-  { id: 8, name: 'SoFoam Ortho Knee Pillow', price: 'Rs.1,935', img: bestsellers8 },
-  { id: 9, name: 'SoFoam Deluxe Jai Namaz', price: 'Rs.5,000', img: bestsellers9 },
-  { id: 10, name: 'SoFoam Baby Nursing Pillow', price: 'Rs.4,500', img: bestsellers10 },
-];;
+  // Original products list
+  const allProducts = [
+    { id: 1, name: 'SoFoam Coccyx Cushion', price: 'Rs.4,320', img: bestsellers1 },
+    { id: 2, name: 'SoFoam Ortho Back Care Cushion', price: 'Rs.3,870', img: bestsellers2 },
+    { id: 3, name: 'SoFoam Gold Pillow', price: 'Rs.1,800', img: bestsellers3 },
+    { id: 4, name: 'SoFoam Contour Pillow', price: 'Rs.4,230', img: bestsellers4 },
+    { id: 5, name: 'SoFoam Lumbar Support Cushion', price: 'Rs.7,155', img: bestsellers5 },
+    { id: 6, name: 'SoFoam Ultra Waterproof Protector', price: 'Rs.7,100', img: bestsellers6 },
+    { id: 7, name: 'SoFoam Ring Cushion', price: 'Rs.4,320', img: bestsellers7 },
+    { id: 8, name: 'SoFoam Ortho Knee Pillow', price: 'Rs.1,935', img: bestsellers8 },
+    { id: 9, name: 'SoFoam Deluxe Jai Namaz', price: 'Rs.5,000', img: bestsellers9 },
+    { id: 10, name: 'SoFoam Baby Nursing Pillow', price: 'Rs.4,500', img: bestsellers10 },
+  ];
+
+  // Remove duplicates by ID (in case of accidental repetition)
+  const uniqueProducts = Array.from(new Map(allProducts.map(item => [item.id, item])).values());
+
+  // Shuffle the final unique list
+  const products = uniqueProducts.sort(() => 0.5 - Math.random());
 
   const scrollLeft = () => {
     const cardWidth = sliderRef.current.querySelector('.arrival-card').offsetWidth + 16; // 16px gap
@@ -41,15 +48,14 @@ const products = [
   return (
     <section className="arrival-container">
       {/* Texts */}
-<div className="arrival-texts">
-  <p className="explore-text">Experience SOFOAM’s Comfort Essentials</p>
-  <h2 className="arrival-heading">Best Sellers</h2>
-  <p className="arrival-subtext">
-    Upgrade your sleep and relaxation with SOFOAM’s most-loved pillows, mattresses, and bedding—crafted for lasting comfort and support.
-  </p>
-  <button className="shop-btn">SOFOAM Best Sellers</button>
-</div>
-
+      <div className="arrival-texts">
+        <p className="explore-text">Experience SOFOAM’s Comfort Essentials</p>
+        <h2 className="arrival-heading">Best Sellers</h2>
+        <p className="arrival-subtext">
+          Upgrade your sleep and relaxation with SOFOAM’s most-loved pillows, mattresses, and bedding—crafted for lasting comfort and support.
+        </p>
+        <button className="shop-btn">SOFOAM Best Sellers</button>
+      </div>
 
       {/* Slider */}
       <div className="arrival-slider" ref={sliderRef}>
