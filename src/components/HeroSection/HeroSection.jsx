@@ -29,6 +29,13 @@ const HeroSection = () => {
           <span>#SOFOAMComfort</span>
           <span>Experience Perfect Sleep</span>
           <span>Quality Foam for Every Home</span>
+          {/* Duplicate the same content for seamless scroll */}
+          <span>#SOFOAMComfort</span>
+          <span>Experience Perfect Sleep</span>
+          <span>Quality Foam for Every Home</span>
+          <span>#SOFOAMComfort</span>
+          <span>Experience Perfect Sleep</span>
+          <span>Quality Foam for Every Home</span>
         </div>
       </div>
 
