@@ -14,7 +14,7 @@ const Footer = () => {
           </h1>
           {/* <p>Cavalry Ground, Lahore, Pakistan 54660</p> */}
           <p>SoFoam</p>
-<p><a href="tel:03226314337">0322-6314337</a></p>        </div>
+<p><a href="tel:03226314337">123456789</a></p>        </div>
 
         {/* Center Section */}
         <div className="footer-center">
